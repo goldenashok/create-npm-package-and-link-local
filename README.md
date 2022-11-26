@@ -17,3 +17,10 @@
 8. create 'my-app' folder inside the npm-own-package
     ```D:\Desktop\npm-own-package>mkdir my-app```
 9. create index.js inside the my-app and add below code
+    ```sh
+    const {multiplication} = require('my-package');
+    console.log('Mulitiplicaiton Answer', multiplication(5,2));
+    ```
+ 10. After careating the index.js, link the my-packge to our applicaiton
+        ```npm linkn my-package```
+ 11. Then run the applicaiton ```D:\Destop\npm-own-package\my-app>node index.js```
