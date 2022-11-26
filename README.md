@@ -6,7 +6,7 @@
 3. The ```npm init -y```command creat package.json and point to index.js as a main in package.json
 4. create index.js inside the "my-package" folder. add below code in to the index.js
     ```sh
-    console.log('muliplication package');
+    console.log('Node Package multiplication package');
     const multiplication =  (x,y) => {
       return x*y;
     }
@@ -19,8 +19,13 @@
 9. create index.js inside the my-app and add below code
     ```sh
     const {multiplication} = require('my-package');
-    console.log('Mulitiplicaiton Answer', multiplication(5,2));
+    console.log('Multiplicaiton Answer', multiplication(5,2));
     ```
  10. After careating the index.js, link the my-packge to our applicaiton
         ```npm linkn my-package```
  11. Then run the applicaiton ```D:\Destop\npm-own-package\my-app>node index.js```
+        ```sh
+            D:\Desktop\npm-own-package\my-app>node index.js
+            Node Package multiplication package
+            Multiplication Answer : 10
+        ```
